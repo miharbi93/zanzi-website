@@ -904,7 +904,7 @@ body{
 	padding:120px 0;
 }
 .fun-facts{
-	background:url('img/fun-bg.jpg');
+	background:url('img/beaches/Zanzibar_Island_Stone_Town.jpg');
 	background-size:cover;
 	background-repeat:no-repeat;
 }
@@ -1715,7 +1715,7 @@ body{
 	Start Clients CSS
 ==========================*/
 .clients{
-	background-image:url('img/client-bg.jpg');
+	background-image:url('img/beaches/pexels-bella-white-201200-635279.jpg');
 	background-size:cover;
 	background-position:center;
 	padding:100px 0px;
@@ -2373,7 +2373,7 @@ body{
 }
 /* Blockqoute */
 .news-single blockquote {
-	background-image: url('img/blockqoute-bg.jpg');
+	background-image: url('img/beaches/pexels-bella-white-201200-635279.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
