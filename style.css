@@ -4170,3 +4170,36 @@ body{
 /*=========================
 	End Footer CSS
 ===========================*/
+
+
+
+.responsive-heading {
+	font-size: 1.5rem; /* default font size, adjustable */
+	margin-bottom: 10px; /* add some margin for better readability */
+	font-weight: bold;
+  }
+  
+  /* Media queries for different screen sizes */
+  @media only screen and (min-width: 1200px) {
+	.responsive-heading {
+	  font-size: 1.5rem; /* large screens (desktops) */
+	}
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.responsive-heading {
+	  font-size: 1.75rem; /* medium screens (laptops) */
+	}
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.responsive-heading {
+	  font-size: 1.5rem; /* small screens (tablets) */
+	}
+  }
+  
+  @media only screen and (max-width: 767px) {
+	.responsive-heading {
+	  font-size: 1rem; /* extra small screens (mobile devices) */
+	}
+  }
