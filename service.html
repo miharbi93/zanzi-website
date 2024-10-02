@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link rel="stylesheet" href="service.css">
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+    <p>Empowering Coastal and Marine Solutions</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services">
+      <h2>Explore Our Services</h2>
+
+      <!-- Community Awareness Service -->
+      <div class="service-item">
+        <h3>Community Awareness</h3>
+        <p>We work closely with local communities to increase awareness about sustainable marine and coastal practices. Join our workshops and educational sessions to learn more.</p>
+        <button class="book-btn" onclick="openBookingForm('Community Awareness')">Book Now</button>
+      </div>
+
+      <!-- Research Assistance Service -->
+      <div class="service-item">
+        <h3>Research Assistance</h3>
+        <p>Whether you're a student, researcher, or organization, we provide expert guidance and resources to assist you in your marine and coastal research.</p>
+        <button class="book-btn" onclick="openBookingForm('Research Assistance')">Book Now</button>
+      </div>
+
+      <!-- Consultancy Service -->
+      <div class="service-item">
+        <h3>Consultancy</h3>
+        <p>Our consultancy services focus on helping businesses and organizations implement sustainable marine solutions and conservation strategies.</p>
+        <button class="book-btn" onclick="openBookingForm('Consultancy')">Book Now</button>
+      </div>
+    </section>
+
+    <!-- Booking Form Section (Hidden by default) -->
+    <section id="booking" style="display: none;">
+      <h2>Book a Service</h2>
+      <form action="submit_booking.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="service">Service:</label>
+        <select id="service" name="service">
+          <option value="Community Awareness">Community Awareness</option>
+          <option value="Research Assistance">Research Assistance</option>
+          <option value="Consultancy">Consultancy</option>
+        </select>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="notes">Additional Notes:</label>
+        <textarea id="notes" name="notes"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Marine & Coastal Solutions. All rights reserved.</p>
+    <nav>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </nav>
+  </footer>
+
+  <script>
+    // Function to open the booking form with the selected service
+    function openBookingForm(service) {
+      // Show the booking form section
+      document.getElementById('booking').style.display = 'block';
+      
+      // Pre-select the service in the dropdown
+      document.getElementById('service').value = service;
+
+      // Scroll down to the booking form
+      document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
