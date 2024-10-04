@@ -4177,6 +4177,7 @@ body{
 	font-size: 1.5rem; /* default font size, adjustable */
 	margin-bottom: 10px; /* add some margin for better readability */
 	font-weight: bold;
+	color: #1A76D1;
   }
   
   /* Media queries for different screen sizes */
@@ -4202,4 +4203,9 @@ body{
 	.responsive-heading {
 	  font-size: 1rem; /* extra small screens (mobile devices) */
 	}
+  }
+
+  .bold{
+	font-weight: 900;
+	color:#121521;
   }
